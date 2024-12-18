@@ -1,0 +1,18 @@
+MODULE BASE (SYSMODULE, NOSTEPIN, VIEWONLY)
+
+ ! System module with basic predefined system data
+ !************************************************
+
+ ! System data tool0, wobj0 and load0
+ ! Do not translate or delete tool0, wobj0, load0
+ PERS tooldata tool0 := [TRUE, [[0, 0, 0], [1, 0, 0, 0]],
+                        [0.001, [0, 0, 0.001],[1, 0, 0, 0], 0, 0, 0]];
+
+ PERS wobjdata wobj0 := [FALSE, TRUE, "", [[0, 0, 0],[1, 0, 0, 0]],
+                        [[0, 0, 0],[1, 0, 0, 0]]];
+
+ PERS loaddata load0 := [0.001, [0, 0, 0.001],[1, 0, 0, 0], 0, 0, 0];
+    TASK PERS tooldata PortaMarcador:=[TRUE,[[0,-0.055,136.002],[1,0,0,0]],[1,[0,0,1],[1,0,0,0],0,0,0]];
+    TASK PERS wobjdata WO_Pastel:=[FALSE,TRUE,"",[[553.11,199.686,120],[0,0.999998771,0.001567502,0]],[[0,0,0],[1,0,0,0]]];
+
+ENDMODULE
